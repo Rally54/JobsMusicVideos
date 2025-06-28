@@ -3,90 +3,102 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Content Hub</title>
+  <title>Fun & Stream Hub</title>
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f8fb;
-      padding: 20px;
+      background: #f4f4f4;
       color: #333;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    header h1 {
-      color: #007acc;
-      font-size: 28px;
-    }
-    section {
-      margin-bottom: 40px;
-    }
-    section h2 {
-      font-size: 22px;
-      margin-bottom: 10px;
-      color: #444;
-    }
-    p {
-      font-size: 14px;
-      margin-bottom: 10px;
-    }
-    ul {
-      list-style: none;
+      margin: 0;
       padding: 0;
     }
-    li {
-      margin-bottom: 12px;
+    header {
+      background: #009688;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      padding: 20px;
+    }
+    h2 {
+      color: #00796B;
+    }
+    .video, .music, .job, .movie {
+      margin-bottom: 25px;
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
     }
     a {
-      display: block;
-      background: #007acc;
-      color: white;
-      text-align: center;
-      padding: 12px;
-      border-radius: 8px;
+      color: #00695C;
       text-decoration: none;
-      transition: background 0.3s ease;
     }
     a:hover {
-      background: #005a99;
-    }
-
-    footer {
-      text-align: center;
-      font-size: 13px;
-      margin-top: 30px;
-      color: #777;
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>🎯 My Content Hub</h1>
-    <p>Stream Movies | Find Online Jobs | Earn Today!</p>
+    <h1>🌍 Fun & Stream Hub</h1>
+    <p>Angalia video za kufurahisha, tafuta kazi mtandaoni, angalia movies na muziki duniani!</p>
   </header>
 
   <section>
-    <h2>🎬 Latest Movies</h2>
-    <p>Watch top trending movies now:</p>
-    <ul>
-      <li><a href="https://monetag.com/smartlink-movie1" target="_blank">🍿 Watch Movie 1</a></li>
-      <li><a href="https://monetag.com/smartlink-movie2" target="_blank">🎥 Watch Movie 2</a></li>
-    </ul>
+    <h2>🤣 Funny Videos</h2>
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe>
+      <p><strong>Title:</strong> World’s Funniest Moments</p>
+    </div>
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/3tmd-ClpJxA" allowfullscreen></iframe>
+      <p><strong>Title:</strong> Best Pranks Compilation</p>
+    </div>
   </section>
 
   <section>
     <h2>💼 Online Jobs</h2>
-    <p>Explore real online job opportunities:</p>
-    <ul>
-      <li><a href="https://monetag.com/smartlink-job1" target="_blank">💻 Work from Home Job 1</a></li>
-      <li><a href="https://monetag.com/smartlink-job2" target="_blank">🤑 Daily Paid Job 2</a></li>
-    </ul>
+    <div class="job">
+      <ul>
+        <li><a href="https://www.upwork.com" target="_blank">Freelance kwa Upwork</a></li>
+        <li><a href="https://www.fiverr.com" target="_blank">Fiverr – Uza Skills zako</a></li>
+        <li><a href="https://remotive.io" target="_blank">Remote Jobs kwenye Remotive</a></li>
+        <li><a href="https://www.peopleperhour.com" target="_blank">PeoplePerHour</a></li>
+      </ul>
+    </div>
   </section>
 
-  <footer>
-    Powered by Monetag | Built by You 💡
-  </footer>
+  <section>
+    <h2>🎬 Movie Streaming</h2>
+    <div class="movie">
+      <p><strong>Watch:</strong> <a href="https://www.crackle.com" target="_blank">Crackle - Free Movies</a></p>
+      <p><strong>Download via:</strong> <a href="https://www.archive.org/details/movies" target="_blank">Internet Archive - Free Movie Downloads</a></p>
+    </div>
+    <div class="movie">
+      <p><strong>Watch:</strong> <a href="https://tubitv.com" target="_blank">Tubi - Legal Streaming</a></p>
+    </div>
+  </section>
+
+  <section>
+    <h2>🎵 Music Streaming & Download</h2>
+    <div class="music">
+      <iframe width="100%" height="166" scrolling="no" frameborder="no" 
+              allow="autoplay" 
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/347268684&color=%23909090"></iframe>
+      <p><a href="https://soundcloud.com" target="_blank">Stream more on SoundCloud</a></p>
+    </div>
+    <div class="music">
+      <p><strong>Download Free Music:</strong> <a href="https://freemusicarchive.org/" target="_blank">Free Music Archive</a></p>
+    </div>
+  </section>
+
 </body>
-</html>
+  </html>
