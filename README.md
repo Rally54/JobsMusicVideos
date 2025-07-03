@@ -1,54 +1,29 @@
-https://github.com/Rally54/JobsMusicVideos.git# JobsMusicVideos 🎵🎬💼
+# InfoPilot Telegram WebApp
 
-**JobsMusicVideos** is an open-source web project that brings together global entertainment and opportunity in one place.
+**InfoPilot** is a Telegram Mini App that delivers real-time updates about:
+- Latest job opportunities
+- New music releases
+- Trending videos
+- Other relevant content
 
-Visit the website to:
-- 🎥 Watch short and funny videos directly embedded from YouTube
-- 🎬 Stream free movies legally and access download links from trusted sites
-- 🎶 Stream music via SoundCloud and download from Free Music Archive
-- 💼 Explore real and trusted online job platforms
-
----
-
-## 🌍 Live Project Repository
-
-🔗 [GitHub Repository](https://github.com/Rally54/JobsMusicVideos.git)
+The app integrates with Firebase Firestore to store subscription data from users interacting via Telegram WebApp. It is deployed on **Vercel** using plain **HTML, CSS, and JavaScript** (no frameworks required).
 
 ---
 
-## 📸 Preview
+## 🔗 Live Demo
 
-Fun & Stream Hub gives a clean and responsive layout. The main sections include:
-
-- **Funny Videos** – Watch embedded YouTube videos like:
-  - *World’s Funniest Moments*
-  - *Best Pranks Compilation*
-  
-- **Online Jobs** – Direct links to trusted job sites:
-  - [Upwork](https://www.upwork.com)
-  - [Fiverr](https://www.fiverr.com)
-  - [Remotive](https://remotive.io)
-  - [PeoplePerHour](https://www.peopleperhour.com)
-
-- **Movie Streaming & Downloading**
-  - Watch via [Crackle](https://www.crackle.com) or [Tubi](https://tubitv.com)
-  - Download from [Internet Archive](https://archive.org/details/movies)
-
-- **Music Streaming & Downloads**
-  - Stream from [SoundCloud](https://soundcloud.com)
-  - Download free music from [Free Music Archive](https://freemusicarchive.org)
+- **Telegram Bot:** [@rally54_bot](https://t.me/rally54_bot)  
+- **Hosted WebApp (Vercel):** [https://infopilot.vercel.app](https://infopilot.vercel.app)
 
 ---
 
-## 📱 Mobile Friendly
+## 🚀 Features
 
-The website is fully responsive and adjusts to mobile devices and tablets for a better viewing experience.
+- Telegram WebApp integration using `window.Telegram.WebApp`
+- "Subscribe Now" button that sends data to Firestore
+- Firebase SDK integration via `<script>` tag
+- Fast deployment using GitHub + Vercel
 
 ---
 
-## ⚙️ How to Use
-
-1. Clone or download the repository:
-   ```bash
-   git clone https://github.com/Rally54/JobsMusicVideos.git
-   
+## 📂 Project Structure*
