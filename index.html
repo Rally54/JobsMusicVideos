@@ -1,73 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jobs | Music | Videos | Ajira Updates</title>
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      margin: 0;
-      padding: 20px;
-    }
-
-    h1 {
-      text-align: center;
-    }
-
-    .section {
-      margin: 20px auto;
-      background: #fff;
-      border-radius: 10px;
-      padding: 15px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      max-width: 800px;
-    }
-
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    li {
-      margin-bottom: 10px;
-    }
-
-    a {
-      color: #0077cc;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Media & Updates Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: Arial, sans-serif; background: #f9f9f9; margin: 0; padding: 0; }
+        header { background: #2d3e50; color: #fff; padding: 20px 0; text-align: center; }
+        nav { background: #1abc9c; padding: 10px 0; text-align: center; }
+        nav a { color: #fff; text-decoration: none; margin: 0 15px; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        main { padding: 30px 10px; max-width: 900px; margin: 0 auto; }
+        section { margin-bottom: 40px; }
+        h2 { color: #2d3e50; }
+        ul { list-style: none; padding: 0; }
+        li { background: #fff; margin: 10px 0; padding: 15px; border-radius: 5px; box-shadow: 0 2px 6px #eee; }
+        a.download { color: #1abc9c; font-weight: bold; }
+        @media (max-width: 600px) {
+            main { padding: 10px; }
+        }
+    </style>
 </head>
 <body>
-  <h1>🌍 Online Jobs, Music, Videos & Ajira Updates</h1>
-
-  <div class="section" id="jobs">
-    <h2>📄 Latest Jobs</h2>
-    <ul></ul>
-  </div>
-
-  <div class="section" id="music">
-    <h2>🎵 Latest Music</h2>
-    <ul></ul>
-  </div>
-
-  <div class="section" id="videos">
-    <h2>🎥 Latest Videos</h2>
-    <ul></ul>
-  </div>
-
-  <div class="section" id="ajira">
-    <h2>📢 Ajira Updates</h2>
-    <ul></ul>
-  </div>
-
-  <script src="main.js"></script>
+    <header>
+        <h1>Media & Updates Portal</h1>
+        <p>Your source for movies, music, dramas, job & Ajira updates, and news!</p>
+    </header>
+    <nav>
+        <a href="#movies">Movies</a>
+        <a href="#music">Music</a>
+        <a href="#dramas">Dramas</a>
+        <a href="#jobs">Online Jobs</a>
+        <a href="#ajira">Ajira Updates</a>
+        <a href="#news">News</a>
+    </nav>
+    <main>
+        <section id="movies">
+            <h2>Movies</h2>
+            <ul>
+                <li>
+                    <span>Movie Title 1</span> —
+                    <a class="download" href="https://your-movie-link.com/movie1.mp4" download>Download</a>
+                    | <a href="https://your-movie-link.com/movie1.mp4" target="_blank">Watch Online</a>
+                </li>
+                <li>
+                    <span>Movie Title 2</span> —
+                    <a class="download" href="https://your-movie-link.com/movie2.mp4" download>Download</a>
+                    | <a href="https://your-movie-link.com/movie2.mp4" target="_blank">Watch Online</a>
+                </li>
+                <!-- Add more movies -->
+            </ul>
+        </section>
+        <section id="music">
+            <h2>Music</h2>
+            <ul>
+                <li>
+                    <span>Song Title 1</span> —
+                    <a class="download" href="https://your-music-link.com/song1.mp3" download>Download</a>
+                    | <a href="https://your-music-link.com/song1.mp3" target="_blank">Listen Online</a>
+                </li>
+                <!-- Add more songs -->
+            </ul>
+        </section>
+        <section id="dramas">
+            <h2>Dramas</h2>
+            <ul>
+                <li>
+                    <span>Drama Title 1</span> —
+                    <a class="download" href="https://your-drama-link.com/drama1.mp4" download>Download</a>
+                    | <a href="https://your-drama-link.com/drama1.mp4" target="_blank">Watch Online</a>
+                </li>
+                <!-- Add more dramas -->
+            </ul>
+        </section>
+        <section id="jobs">
+            <h2>Online Jobs Updates</h2>
+            <ul>
+                <li>
+                    <a href="https://your-jobs-link.com/job1" target="_blank">Job Opportunity 1</a>
+                </li>
+                <!-- Add more job links -->
+            </ul>
+        </section>
+        <section id="ajira">
+            <h2>Ajira Updates</h2>
+            <ul>
+                <li>
+                    <a href="https://your-ajira-link.com/update1" target="_blank">Ajira Update 1</a>
+                </li>
+                <!-- Add more Ajira updates -->
+            </ul>
+        </section>
+        <section id="news">
+            <h2>News Updates</h2>
+            <ul>
+                <li>
+                    <a href="https://your-news-link.com/news1" target="_blank">Breaking News 1</a>
+                </li>
+                <!-- Add more news links -->
+            </ul>
+        </section>
+    </main>
+    <footer style="text-align:center;padding:20px 0;background:#2d3e50;color:#fff;">
+        &copy; 2025 Media & Updates Portal. All rights reserved.
+    </footer>
 </body>
 </html>
