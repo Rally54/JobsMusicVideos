@@ -1,86 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>InfoPilot | Jobs, Music & Videos</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f2f2f2;
-      padding: 20px;
-      text-align: center;
-    }
-    h1 {
-      color: #007bff;
-    }
-    .section {
-      margin-top: 20px;
-    }
-    button {
-      padding: 12px 20px;
-      font-size: 16px;
-      background: #007bff;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-  </style>
-
-  <!-- Firebase App SDK -->
-  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
-  <!-- Firestore SDK -->
-  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
 </head>
+
 <body>
-  <h1>Welcome to InfoPilot 🎧</h1>
-  <div class="section">
-    <p>Get the latest job updates, music, and videos instantly.</p>
-    <button onclick="sendData()">Subscribe Now</button>
-  </div>
-
-  <script>
-    // Initialize Telegram WebApp
-    const tg = window.Telegram.WebApp;
-    tg.ready();
-    tg.expand();
-
-    // Firebase configuration
-    const firebaseConfig = {
-      apiKey: "AIzaSyA1Mehyq_y-kSzKWtiRTWsOgNGhSo4igz8",
-      authDomain: "infopilot5g-4f1d9.firebaseapp.com",
-      projectId: "infopilot5g-4f1d9",
-      storageBucket: "infopilot5g-4f1d9.firebasestorage.app",
-      messagingSenderId: "210112237163",
-      appId: "1:210112237163:web:748f6a2d10c72830b56b2e",
-      measurementId: "G-1RL3ERTQ44"
-    };
-
-    // Initialize Firebase
-    const app = firebase.initializeApp(firebaseConfig);
-    const db = firebase.firestore();
-
-    async function saveToFirestore() {
-      try {
-        await db.collection("subscribers").add({
-          subscribedAt: new Date().toISOString(),
-          platform: "telegram-webapp"
-        });
-        alert("✅ Subscription successful!");
-      } catch (error) {
-        console.error("❌ Error saving to Firestore:", error);
-      }
-    }
-
-    function sendData() {
-      tg.sendData("user_subscribed_to_infopilot");
-      saveToFirestore();
-    }
-
-    tg.MainButton.setText("Click to Subscribe");
-    tg.MainButton.onClick(sendData);
-    tg.MainButton.show();
-  </script>
+  
 </body>
+
 </html>
